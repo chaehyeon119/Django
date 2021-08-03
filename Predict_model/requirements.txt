@@ -1,0 +1,6 @@
+flask
+pillow
+tensorflow
+keras
+pytest
+
