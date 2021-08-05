@@ -1,0 +1,14 @@
+{% extends "shop/layout.html"%}
+
+{% block content %}
+
+{{ item.name }}
+
+<hr />
+
+{{ item.price }},
+{% if item.photo %}
+<img src="{{ item.photo.url }}" style="width: 300px; height: 300px;" />
+{% endif %}
+
+{% endblock %}

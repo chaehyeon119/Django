@@ -1,0 +1,18 @@
+{% extends "journal/layout.html"%}
+
+{% block content %}
+
+{{ post.name }}
+{{ comment.created_at}}
+<hr />
+
+{{ post.content }}
+{% if post.photo %}
+<img src="{{ post.photo.url }}" style="width: 300px; height: 300px;" />
+
+
+{% endif %}
+
+
+
+{% endblock %}
