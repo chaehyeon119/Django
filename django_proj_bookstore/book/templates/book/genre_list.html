@@ -1,0 +1,24 @@
+{% extends "book/layout.html" %} {% block content %}
+
+<table border="5" bgcolor="" align="center">
+  <tbody>
+    {% for genre in genre_list %}
+      <tr>
+        <td width="15%" align="center"><h5>{{ genre.pk }}</h5></td>
+        <td width="15%" align="center">
+          <h5><a href="/book/{{ genre.pk }}/">{{ genre.name }}</a></h5>
+        </td>
+        <td>
+          <img
+            src="{{ genre.photo.url }}"
+            style="width: 370px;"
+          />    
+        </td>
+      </tr>
+      {% endfor %}
+
+    </th>
+  </tbody>
+</table>
+
+{% endblock %}
